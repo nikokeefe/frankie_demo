@@ -1,11 +1,29 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Frankie McMillan`,
+    description: `Portfolio website for author and poet, Frankie McMillan.`,
+    author: `nikwillok`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'tfmbz79vv3go',
+        accessToken: 'Sm4FhzoB9BlA37qAjxBPp9BvCdQ4Bg_KIeipsZUt-2U',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['baskerville:400, muli:300,700'],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,4 +49,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
