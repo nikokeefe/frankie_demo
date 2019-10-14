@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { window } from 'browser-monads';
 
-import logo from '../../images/frankie_logo.svg';
+import logo from '../../images/compass-logo.svg';
 
 import './nav.css';
 
@@ -19,13 +19,13 @@ const Nav = () => {
         </a>
         <Link
           className={
-            window.location.href.indexOf('contact') > 0
+            window.location.href.indexOf('about') > 0
               ? 'nav__item--link active'
               : 'nav__item--link'
           }
           to="/contact"
         >
-          Contact
+          About
         </Link>
         <Link
           className={
@@ -37,6 +37,38 @@ const Nav = () => {
           to="/books"
         >
           Books
+        </Link>
+
+        <Link
+          className={
+            window.location.href.indexOf('reviews') > 0
+              ? 'nav__item--link active'
+              : 'nav__item--link'
+          }
+          to="/contact"
+        >
+          Reviews
+        </Link>
+
+        <Link
+          className={
+            window.location.href.indexOf('Buy') > 0
+              ? 'nav__item--link active'
+              : 'nav__item--link'
+          }
+          to="url(https://www.nationwidebooks.co.nz/author/frankie-mcmillan)"
+        >
+          Buy
+        </Link>
+        <Link
+          className={
+            window.location.href.indexOf('contact') > 0
+              ? 'nav__item--link active'
+              : 'nav__item--link'
+          }
+          to="/contact"
+        >
+          Contact
         </Link>
       </div>
     </nav>

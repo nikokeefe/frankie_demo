@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql, navigate, StaticQuery } from 'gatsby';
 
 import './featured.css';
@@ -30,7 +30,7 @@ export default () => (
       }
     `}
     render={data => (
-      <header>
+      <Fragment>
         {data.allContentfulBooks.edges.map(edge => (
           <div key={edge.node.id} className="header__section">
             <div
@@ -53,7 +53,7 @@ export default () => (
             </div>
           </div>
         ))}
-      </header>
+      </Fragment>
     )}
   />
 );
