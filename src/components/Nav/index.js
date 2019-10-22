@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { window } from 'browser-monads';
 
-import logo from '../../images/compass-logo.svg';
+// import logo from '../../images/compass-logo.svg';
 
 import './nav.css';
 
@@ -10,12 +10,13 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav__items">
-        <a href="/" className="nav__item--left">
-          <img
-            src={logo}
-            className="nav__item--logo"
-            alt="frankie mcmillan logo"
-          />
+        <a href="/" className="nav__item--left nav__item--logo">
+          <p>
+            <span>frankie</span>
+          </p>
+          <p>
+            <span>macmillan</span>
+          </p>
         </a>
         <Link
           className={
@@ -50,16 +51,18 @@ const Nav = () => {
           Reviews
         </Link>
 
-        <Link
+        <a
           className={
             window.location.href.indexOf('Buy') > 0
               ? 'nav__item--link active'
               : 'nav__item--link'
           }
-          to="url(https://www.nationwidebooks.co.nz/author/frankie-mcmillan)"
+          href="https://www.nationwidebooks.co.nz/author/frankie-mcmillan"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Buy
-        </Link>
+        </a>
         <Link
           className={
             window.location.href.indexOf('contact') > 0

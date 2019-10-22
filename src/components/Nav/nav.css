@@ -20,7 +20,11 @@ nav {
 }
 
 .nav__item--logo {
-  height: 40px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  line-height: 6px;
+  font-weight: 500;
 }
 
 .nav__item--link {
