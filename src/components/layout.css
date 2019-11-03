@@ -1,7 +1,7 @@
 body {
-  background: #0a0a0a;
+  background: #493b61;
   margin: 0 auto;
-  padding: 0%;
+  padding: 0 10%;
   max-width: 1200px;
 }
 
@@ -17,7 +17,7 @@ h1 {
   width: 124px;
   height: 38px;
   border-radius: 5px;
-  background-color: #f06666;
+  background-color: #3a294b;
   color: #fff;
   border: none;
   font-family: BrandonGrotW01-Light, sans-serif;

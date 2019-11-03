@@ -14,7 +14,7 @@ header {
 }
 
 .header__img {
-  background-image: url('../../images/general-header-image.jpg');
+  background-image: url('../../images/frankie_backyard.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,9 +24,9 @@ header {
   margin-right: auto;
   height: 500px;
   width: 100vw;
-  max-width: 500px;
+  max-width: auto;
   position: absolute;
-  left: 55%;
+  /* left: 55%; */
   margin-top: 12vh;
   z-index: -1;
 }
@@ -40,7 +40,7 @@ header {
   left: 0;
   background-image: linear-gradient(
     to right,
-    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0) 0%,
     rgba(10, 10, 10, 0.6) 30%,
     rgba(10, 10, 10, 0) 100%
   );

@@ -53,13 +53,13 @@
   grid-column-start: span 4;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .card:nth-child(n) {
     grid-column-start: span 6;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .card:nth-child(n) {
     grid-column-start: span 12;
   }

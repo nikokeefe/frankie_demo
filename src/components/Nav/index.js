@@ -24,7 +24,7 @@ const Nav = () => {
               ? 'nav__item--link active'
               : 'nav__item--link'
           }
-          to="/contact"
+          to="/about"
         >
           About
         </Link>
@@ -46,7 +46,7 @@ const Nav = () => {
               ? 'nav__item--link active'
               : 'nav__item--link'
           }
-          to="/contact"
+          to="/reviews"
         >
           Reviews
         </Link>
